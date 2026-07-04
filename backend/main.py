@@ -23,7 +23,7 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-model = joblib.load("backend/models/xgboost_model.pkl")
+model = joblib.load("models/xgboost_model.pkl")
 # print("Model loaded successfully!")
 
 class CustomerData(BaseModel):
