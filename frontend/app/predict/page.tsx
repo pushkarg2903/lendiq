@@ -33,7 +33,7 @@ const [error, setError] = useState("");
   setResult(null);
 
   try {
-  const response = await fetch("http://127.0.0.1:8000/predict", {
+  const response = await fetch("https://lendiq-backend.onrender.com/predict", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -73,7 +73,7 @@ const [error, setError] = useState("");
   return (
     <main className="min-h-screen bg-zinc-950 text-white flex justify-center py-12 px-6">
 
-      <div className="w-full max-w-2xl">
+      <div className="w-full max-w-2xl bg-zinc-900 rounded-2xl shadow-xl p-8">
 
         <h1 className="text-4xl font-bold mb-8 text-center">
           Credit Risk Prediction
